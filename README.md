@@ -55,3 +55,10 @@ Feature	Description
 # Machine Learning Goal.
 Our machine learning goal for this project is to build a predictive model that can accurately identify individuals with heart disease using the provided dataset
 
+# Data Processing.
+We checked the data types and confirmed that all variables were floats. We then checked for missing values but found none. Duplicate records were identified and subsequently dropped. In addition, we performed Exploratory Data Analysis (EDA) using both univariate and multivariate approaches to better understand the distributions and relationships among the variables.
+
+# Data Modelling.
+
+
+
