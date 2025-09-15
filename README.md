@@ -1,8 +1,9 @@
-# HEART DISEASE HEALTH INDICATORS..
+# PREDICTING HEART DISEASE..
 # Motivation for choosing the project.
 According to the World Health Organization, non-communicable diseases (NCDs), including cardiovascular diseases (heart disease), account for approximately 36% of all deaths in Uganda (World Health Organisation, 2023).In 2021, cardiovascular diseases alone caused about 27,121 deaths, with an age-standardized mortality rate of 223 per 100,000 people (World Health Federation, 2025). These figures underscore the urgent need for robust, data-driven models that can predict heart disease risk and help intervene early in at-risk populations.
 # About the dataset
-This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset contains 253,680 rows and 22 columns.This dataset was obtained from kaggle.
+This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset is called " Heart Disease Health Indicators" . It contains 253,680 rows and 22 columns and  was obtained from kaggle.
+
 # Data Description. 
 
 Target Variable: HeartDiseaseorAttack (binary: 1 = has/had heart disease, 0 = no
@@ -63,3 +64,34 @@ We started with identifying our target and features, we then split the data into
 After, we tried diffirent algorithms for traditional model which included: Logistic regression, Decision tree Classifier, Random Forest, and  XGBoost Classifier. But some algoriths more especially Decision Tree and Random Forest performed poorly on the crucial recall metric before tuning them. 
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
+
+We also trained our model using both Untuned Neural Network and Tuned Neural Network(Keras). The Keras Tuner achieved the objective of maximising recall but at the cost of precision and overall accuracy. It is extremely sensitive to heart disease cases (high recall, low false negatives) but produces many false alarms (low precision, high false positives). In a medical screening context where missing true cases is unacceptable, this behaviour may be acceptable, but it leads to unnecessary follow-ups for many healthy individuals.
+
+# Challenges faced.
+1. The Challenge of Class Imbalance: The overwhelming majority of your dataset consisted of individuals without heart disease, making it difficult for the models to learn to identify the rare positive cases. An unaddressed model would likely achieve high accuracy by simply predicting "no heart disease" for everyone, but it would be useless in a clinical setting by missing almost every true case.
+
+How we overcame it: We addressed this directly by using techniques such as balanced class weights, Random Undersampling, and SMOTE. This forced the models to pay equal attention to the minority class.
+
+2.Model Selection & Tuning.The initial models tested ( the untuned Decision Tree and Random Forest) performed poorly on the crucial recall metric.
+
+We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. This process transformed the untuned models into highly effective screening tools.
+
+# Our model implications
+
+Positive Implications
+
+The model is highly effective as a first-pass screening tool. Its high recall means it will likely catch nearly every person who has heart disease, minimizing the risk of a dangerous missed diagnosis.
+
+Negative Implications
+
+The main negative implication is the high rate of false positives due to the model's low precision. This will cause
+
+Unnecessary Costs: A large number of healthy individuals will be flagged as having heart disease, leading to unnecessary follow-up tests, consultations, and potential treatments.
+
+Patient Anxiety: Being told you may have heart disease can cause significant stress and anxiety for the patient, even if the diagnosis is later disproven.
+
+Overburdened Healthcare System: The high volume of false positives could strain medical resources, including specialists' time and diagnostic equipment.
+
+# Final Conclusion.
+
+
