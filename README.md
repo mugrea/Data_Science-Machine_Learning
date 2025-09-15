@@ -59,6 +59,7 @@ Our machine learning goal for this project is to build a predictive model that c
 We checked the data types and confirmed that all variables were floats. We then checked for missing values but found none. Duplicate records were identified and subsequently dropped. In addition, we performed Exploratory Data Analysis (EDA) using both univariate and multivariate approaches to better understand the distributions and relationships among the variables.
 
 # Data Modelling.
+We started with identifying our target and features, we then split the data into training,validation and testing sets.
+After, we tried diffirent algorithms for traditional model which included: Logistic regression, Decision tree Classifier, Random Forest, and  XGBoost Classifier. But some algoriths more especially Decision Tree and Random Forest performed poorly on the crucial recall metric before tuning them. 
 
-
-
+We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
