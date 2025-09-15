@@ -58,6 +58,13 @@ Our machine learning goal for this project is to build a predictive model that c
 
 # Data Processing.
 We checked the data types and confirmed that all variables were floats. We then checked for missing values but found none. Duplicate records were identified and subsequently dropped. In addition, we performed Exploratory Data Analysis (EDA) using both univariate and multivariate approaches to better understand the distributions and relationships among the variables.
+<img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/68d3fc5b-0d0b-4fd8-92b8-421ffe37af94" />
+
+<img width="695" height="509" alt="image" src="https://github.com/user-attachments/assets/524556b7-2db6-4878-8fe1-0050eb1ed403" />
+
+
+<img width="444" height="407" alt="image" src="https://github.com/user-attachments/assets/8405eeb3-82a7-4912-a821-56f3034bd08a" />
+
 
 <img width="1459" height="1189" alt="image" src="https://github.com/user-attachments/assets/2ab948e4-c793-445b-89d4-e4e9ea3bd5a2" />
 
