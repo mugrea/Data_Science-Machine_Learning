@@ -98,6 +98,11 @@ Confusion Matrix Display for Keras Tuner.
 # Challenges faced.
 
 1. The Challenge of Class Imbalance: The overwhelming majority of your dataset consisted of individuals without heart disease, making it difficult for the models to learn to identify the rare positive cases. An unaddressed model would likely achieve high accuracy by simply predicting "no heart disease" for everyone, but it would be useless in a clinical setting by missing almost every true case.
+   
+
+<img width="304" height="142" alt="image" src="https://github.com/user-attachments/assets/9a69ea39-cce1-42fc-8cf1-c731e6915a6d" />
+
+
 
 How we overcame it: We addressed this directly by using techniques such as balanced class weights, Random Undersampling, and SMOTE. This forced the models to pay equal attention to the minority class.
 
