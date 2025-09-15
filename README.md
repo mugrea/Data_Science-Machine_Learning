@@ -9,47 +9,47 @@ Target Variable: HeartDiseaseorAttack (binary: 1 = has/had heart disease, 0 = no
 
 Feature	Description
 
-HighBP-	High blood pressure (0 = No, 1 = Yes)
+1. HighBP-	High blood pressure (0 = No, 1 = Yes)
 
-HighChol-	High cholesterol (0 = No, 1 = Yes)
+2. HighChol-	High cholesterol (0 = No, 1 = Yes)
 
-CholCheck	-Cholesterol check in past 5 years (0 = No, 1 = Yes)
+3. CholCheck	-Cholesterol check in past 5 years (0 = No, 1 = Yes)
 
-BMI-	Body Mass Index (numeric)
+4. BMI-	Body Mass Index (numeric)
 
-Smoker-	Ever smoked at least 100 cigarettes (0 = No, 1 = Yes)
+5. Smoker-	Ever smoked at least 100 cigarettes (0 = No, 1 = Yes)
 
-Stroke-	Ever had a stroke (0 = No, 1 = Yes)
+6. Stroke-	Ever had a stroke (0 = No, 1 = Yes)
 
-Diabetes-	Diabetes status (0 = No, 1 = Yes)
+7. Diabetes-	Diabetes status (0 = No, 1 = Yes)
 
-PhysActivity-	Physical activity in past 30 days (0 = No, 1 = Yes)
+8. PhysActivity-	Physical activity in past 30 days (0 = No, 1 = Yes)
 
-Fruits-	Consumes fruit at least once per day (0 = No, 1 = Yes)
+9. Fruits-	Consumes fruit at least once per day (0 = No, 1 = Yes)
 
-Veggies-	Consumes vegetables at least once per day (0 = No, 1 = Yes)
+10. Veggies-	Consumes vegetables at least once per day (0 = No, 1 = Yes)
 
-HvyAlcoholConsump	-Heavy alcohol consumption (0 = No, 1 = Yes)
+11. HvyAlcoholConsump	-Heavy alcohol consumption (0 = No, 1 = Yes)
 
-AnyHealthcare-	Has any form of healthcare coverage (0 = No, 1 = Yes)
+12. AnyHealthcare-	Has any form of healthcare coverage (0 = No, 1 = Yes)
 
-NoDocbcCost-	Couldn’t see a doctor because of cost (0 = No, 1 = Yes)
+13. NoDocbcCost-	Couldn’t see a doctor because of cost (0 = No, 1 = Yes)
 
-GenHlth-	General health (1 = Excellent, 5 = Poor)
+14. GenHlth-	General health (1 = Excellent, 5 = Poor)
 
-MentHlth-	Days mental health not good (0–30)
+15. MentHlth-	Days mental health not good (0–30)
 
-PhysHlth-	Days physical health not good (0–30)
+16. PhysHlth-	Days physical health not good (0–30)
 
-DiffWalk-	Difficulty walking/climbing stairs (0 = No, 1 = Yes)
+17. DiffWalk-	Difficulty walking/climbing stairs (0 = No, 1 = Yes)
 
-Sex-	0 = Female, 1 = Male
+18. Sex-	0 = Female, 1 = Male
 
-Age	(Categorical)- age group (1 = 18–24, …, 13 = 80+)
+19. Age	(Categorical)- age group (1 = 18–24, …, 13 = 80+)
 
-Education-	Education level-(1 = Never attended … 6 = College graduate)
+20. Education-	Education level-(1 = Never attended … 6 = College graduate)
 
-Income-	Income category (1 = <$10,000 … 8 = $75,000+)
+21. Income-	Income category (1 = <$10,000 … 8 = $75,000+)
 
 
 # Machine Learning Goal.
