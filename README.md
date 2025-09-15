@@ -75,6 +75,19 @@ After, we tried diffirent algorithms for traditional model which included: Logis
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
 
+
+Confusion Matrix Display for Untuned XGBoost.
+
+<img width="395" height="331" alt="image" src="https://github.com/user-attachments/assets/581949ce-460e-426c-ae2a-a0b6f4dcdce0" />
+
+
+
+
+Confusion Matrix Display for tuned XGBoost.
+
+<img width="377" height="316" alt="image" src="https://github.com/user-attachments/assets/b642a4d1-d3f7-4dd4-94aa-f99943ad5980" />
+
+
 We also trained our model using both Untuned Neural Network and Tuned Neural Network(Keras). The Keras Tuner achieved the objective of maximising recall but at the cost of precision and overall accuracy. It is extremely sensitive to heart disease cases (high recall, low false negatives) but produces many false alarms (low precision, high false positives). In a medical screening context where missing true cases is unacceptable, this behaviour may be acceptable, but it leads to unnecessary follow-ups for many healthy individuals.
 
 
