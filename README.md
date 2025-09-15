@@ -118,6 +118,18 @@ How we overcame it: We addressed this directly by using techniques such as balan
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. This process transformed the untuned models into highly effective screening tools.
 
+
+Confusion matrix for the Random Forest before tuning.
+
+<img width="338" height="283" alt="image" src="https://github.com/user-attachments/assets/a8c4a9af-ca61-4f68-acde-4cd2ede9620b" />
+
+
+Confusion matrix for the Random Forest after tuning.
+
+
+<img width="310" height="260" alt="image" src="https://github.com/user-attachments/assets/dbf6c1f3-2630-4e50-8999-7d170381c2ad" />
+
+
 # Our model implications
 
 Positive Implications
