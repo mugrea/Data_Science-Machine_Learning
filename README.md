@@ -91,7 +91,8 @@ Confusion Matrix Display for Untuned Neural Network.
 
 
 Confusion Matrix Display for Keras Tuner.
-<img width="676" height="460" alt="image" src="https://github.com/user-attachments/assets/ff51c7a2-d63b-40b5-9f07-a22b0b61c193" />
+
+<img width="439" height="313" alt="image" src="https://github.com/user-attachments/assets/f5ee1b96-ce1a-4d27-8df1-17d064b27d31" />
 
 
 # Challenges faced.
