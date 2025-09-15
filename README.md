@@ -95,4 +95,7 @@ Overburdened Healthcare System: The high volume of false positives could strain 
 
 # Final Conclusion.
 
+Our project's core finding is that the most effective strategy for this imbalanced dataset is to prioritize recall to minimize false negatives. By systematically tuning a range of models, we consistently achieved a highly effective performance profile tailored for a medical screening context.
+
+The Tuned Neural Network (Keras Tuner) emerged as the optimal choice. It achieved the highest recall of 94% and the lowest false negative rate, making it the most reliable tool for identifying true heart disease cases. While this comes with a necessary trade-off of a higher false positive rate, this model is perfectly suited for a hospital triage setting. Its purpose is to efficiently and reliably flag at-risk individuals for further diagnostic testing, ensuring that a life-threatening condition is not missed.
 
