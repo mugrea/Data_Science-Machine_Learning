@@ -3,6 +3,8 @@
 According to the World Health Organization, non-communicable diseases (NCDs), including cardiovascular diseases (heart disease), account for approximately 36% of all deaths in Uganda (World Health Organisation, 2023).In 2021, cardiovascular diseases alone caused about 27,121 deaths, with an age-standardized mortality rate of 223 per 100,000 people (World Health Federation, 2025). These figures underscore the urgent need for robust, data-driven models that can predict heart disease risk and help intervene early in at-risk populations.
 
 <img width="311" height="162" alt="image" src="https://github.com/user-attachments/assets/56aeaf24-1ff4-4ab4-a9f4-358c96a5eed8" />
+![images](https://github.com/user-attachments/assets/d090db78-3672-45c5-acfa-d1778e9c72c7)
+
 
 # About the dataset
 This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset is called " Heart Disease Health Indicators" . It contains 253,680 rows and 22 columns and  was obtained from kaggle.
