@@ -5,8 +5,6 @@ According to the World Health Organization, non-communicable diseases (NCDs), in
 <img width="311" height="162" alt="image" src="https://github.com/user-attachments/assets/56aeaf24-1ff4-4ab4-a9f4-358c96a5eed8" />        ![images](https://github.com/user-attachments/assets/ec894306-ddbd-45a2-98db-f3b6edc7da0e)    <img width="316" height="159" alt="image" src="https://github.com/user-attachments/assets/f740fcef-46f0-4efc-bded-1af025223d41" />
 
 
-
-
 # About the dataset
 This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset is called " Heart Disease Health Indicators" . It contains 253,680 rows and 22 columns and  was obtained from kaggle.
 
@@ -81,6 +79,11 @@ After, we tried diffirent algorithms for traditional model which included: Logis
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
 
 We also trained our model using both Untuned Neural Network and Tuned Neural Network(Keras). The Keras Tuner achieved the objective of maximising recall but at the cost of precision and overall accuracy. It is extremely sensitive to heart disease cases (high recall, low false negatives) but produces many false alarms (low precision, high false positives). In a medical screening context where missing true cases is unacceptable, this behaviour may be acceptable, but it leads to unnecessary follow-ups for many healthy individuals.
+
+
+Confusion Matrix Display for Keras Tuner.
+<img width="676" height="460" alt="image" src="https://github.com/user-attachments/assets/ff51c7a2-d63b-40b5-9f07-a22b0b61c193" />
+
 
 # Challenges faced.
 
