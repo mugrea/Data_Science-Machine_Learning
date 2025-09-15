@@ -62,6 +62,8 @@ Our machine learning goal for this project is to build a predictive model that c
 
 # Data Processing.
 We checked the data types and confirmed that all variables were floats. We then checked for missing values but found none. Duplicate records were identified and subsequently dropped. In addition, we performed Exploratory Data Analysis (EDA) using both univariate and multivariate approaches to better understand the distributions and relationships among the variables.
+
+
 <img width="389" height="411" alt="image" src="https://github.com/user-attachments/assets/68d3fc5b-0d0b-4fd8-92b8-421ffe37af94" />
 
 <img width="695" height="509" alt="image" src="https://github.com/user-attachments/assets/524556b7-2db6-4878-8fe1-0050eb1ed403" />
@@ -79,6 +81,13 @@ After, we tried diffirent algorithms for traditional model which included: Logis
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
 
 We also trained our model using both Untuned Neural Network and Tuned Neural Network(Keras). The Keras Tuner achieved the objective of maximising recall but at the cost of precision and overall accuracy. It is extremely sensitive to heart disease cases (high recall, low false negatives) but produces many false alarms (low precision, high false positives). In a medical screening context where missing true cases is unacceptable, this behaviour may be acceptable, but it leads to unnecessary follow-ups for many healthy individuals.
+
+
+Confusion Matrix Display for Untuned Neural Network.
+
+<img width="460" height="346" alt="image" src="https://github.com/user-attachments/assets/3435443e-0812-4453-ba39-18ea10508ca4" />
+
+
 
 
 Confusion Matrix Display for Keras Tuner.
