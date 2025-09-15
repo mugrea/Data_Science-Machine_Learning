@@ -59,6 +59,8 @@ Our machine learning goal for this project is to build a predictive model that c
 # Data Processing.
 We checked the data types and confirmed that all variables were floats. We then checked for missing values but found none. Duplicate records were identified and subsequently dropped. In addition, we performed Exploratory Data Analysis (EDA) using both univariate and multivariate approaches to better understand the distributions and relationships among the variables.
 
+<img width="1459" height="1189" alt="image" src="https://github.com/user-attachments/assets/2ab948e4-c793-445b-89d4-e4e9ea3bd5a2" />
+
 # Data Modelling.
 We started with identifying our target and features, we then split the data into training,validation and testing sets.
 After, we tried diffirent algorithms for traditional model which included: Logistic regression, Decision tree Classifier, Random Forest, and  XGBoost Classifier. But some algoriths more especially Decision Tree and Random Forest performed poorly on the crucial recall metric before tuning them. 
