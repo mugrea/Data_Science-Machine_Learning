@@ -68,11 +68,12 @@ We used hyperparameter tuning to optimize each model for the specific metric tha
 We also trained our model using both Untuned Neural Network and Tuned Neural Network(Keras). The Keras Tuner achieved the objective of maximising recall but at the cost of precision and overall accuracy. It is extremely sensitive to heart disease cases (high recall, low false negatives) but produces many false alarms (low precision, high false positives). In a medical screening context where missing true cases is unacceptable, this behaviour may be acceptable, but it leads to unnecessary follow-ups for many healthy individuals.
 
 # Challenges faced.
+
 1. The Challenge of Class Imbalance: The overwhelming majority of your dataset consisted of individuals without heart disease, making it difficult for the models to learn to identify the rare positive cases. An unaddressed model would likely achieve high accuracy by simply predicting "no heart disease" for everyone, but it would be useless in a clinical setting by missing almost every true case.
 
 How we overcame it: We addressed this directly by using techniques such as balanced class weights, Random Undersampling, and SMOTE. This forced the models to pay equal attention to the minority class.
 
-2.Model Selection & Tuning.The initial models tested ( the untuned Decision Tree and Random Forest) performed poorly on the crucial recall metric.
+2. Model Selection & Tuning.The initial models tested ( the untuned Decision Tree and Random Forest) performed poorly on the crucial recall metric.
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. This process transformed the untuned models into highly effective screening tools.
 
