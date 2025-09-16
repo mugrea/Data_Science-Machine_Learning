@@ -1,12 +1,12 @@
 # PREDICTING HEART DISEASE..
 # Motivation for choosing the project.
-According to the World Health Organization, non-communicable diseases (NCDs), including cardiovascular diseases (heart disease), account for approximately 36% of all deaths in Uganda (World Health Organisation, 2023).In 2021, cardiovascular diseases alone caused about 27,121 deaths, with an age-standardized mortality rate of 223 per 100,000 people (World Health Federation, 2025). These figures underscore the urgent need for robust, data-driven models that can predict heart disease risk and help intervene early in at-risk populations.
+According to the World Health Organization, non-communicable diseases (NCDs), including cardiovascular diseases (heart disease), account for approximately 36% of all deaths in Uganda (World Health Organisation, 2023). In 2021, cardiovascular diseases alone caused about 27,121 deaths, with an age-standardized mortality rate of 223 per 100,000 people (World Health Federation, 2025). These figures underscore the urgent need for robust, data-driven models that can predict heart disease risk and help intervene early in at-risk populations.
 
 <img width="311" height="162" alt="image" src="https://github.com/user-attachments/assets/56aeaf24-1ff4-4ab4-a9f4-358c96a5eed8" />        ![images](https://github.com/user-attachments/assets/ec894306-ddbd-45a2-98db-f3b6edc7da0e)    <img width="316" height="159" alt="image" src="https://github.com/user-attachments/assets/f740fcef-46f0-4efc-bded-1af025223d41" />
 
 
 # About the dataset
-This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset is called " Heart Disease Health Indicators" . It contains 253,680 rows and 22 columns and  was obtained from kaggle.
+This a cleaned version of the 2015 Behavioral Risk Factor Surveillance System (BRFSS), an annual telephone survey conducted by the Centers for Disease Control and Prevention (CDC). The BRFSS collects responses on health-related behaviors and chronic conditions from hundreds of thousands of Americans. This dataset is called " Heart Disease Health Indicators". It contains 253,680 rows and 22 columns and was obtained from kaggle.
 
 # Data Description. 
 
@@ -70,8 +70,8 @@ We checked the data types and confirmed that all variables were floats. We then 
 <img width="444" height="407" alt="image" src="https://github.com/user-attachments/assets/8405eeb3-82a7-4912-a821-56f3034bd08a" />    <img width="1459" height="1189" alt="image" src="https://github.com/user-attachments/assets/2ab948e4-c793-445b-89d4-e4e9ea3bd5a2" />
 
 # Data Modelling.
-We started with identifying our target and features, we then split the data into training,validation and testing sets.
-After, we tried diffirent algorithms for traditional model which included: Logistic regression, Decision tree Classifier, Random Forest, and  XGBoost Classifier. But some algoriths more especially Decision Tree and Random Forest performed poorly on the crucial recall metric before tuning them. 
+We started with identifying our target and features, we then split the data into training, validation and testing sets.
+After, we tried different algorithms for traditional model which included: Logistic regression, Decision tree Classifier, Random Forest, and  XGBoost Classifier. But some algoriths more especially Decision Tree and Random Forest performed poorly on the crucial recall metric before tuning them. 
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. The XGBoost Classifier performed best with a high recall of 0.82 which indicates it was the most effective at minimizing false negatives and correctly identifying individuals with heart disease.
 
@@ -114,7 +114,7 @@ Confusion Matrix Display for Keras Tuner.
 
 How we overcame it: We addressed this directly by using techniques such as balanced class weights, Random Undersampling, and SMOTE. This forced the models to pay equal attention to the minority class.
 
-2. Model Selection & Tuning.The initial models tested ( the untuned Decision Tree and Random Forest) performed poorly on the crucial recall metric.
+2. Model Selection & Tuning. The initial models tested ( the untuned Decision Tree and Random Forest) performed poorly on the crucial recall metric.
 
 We used hyperparameter tuning to optimize each model for the specific metric that mattered most: recall. This process transformed the untuned models into highly effective screening tools.
 
